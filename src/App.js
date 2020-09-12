@@ -1,14 +1,22 @@
 import React from 'react';
-
 import './App.css';
 import 'antd/dist/antd.css';
-import { Button } from 'antd';
+import AppHeader from './components/common/header'
+
+
+import { Layout } from 'antd';
+
+const { Header } = Layout;
 
 function App() {
   return (
-    <div className="App">
-    <Button type="primary">Primary Button</Button>
-    </div>
+    <Layout className="mainLayout">
+      <Header>
+        <AppHeader />
+      
+    </Header>
+    
+  </Layout>
   );
 }
 
