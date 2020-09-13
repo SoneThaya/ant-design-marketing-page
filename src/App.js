@@ -1,10 +1,10 @@
-import React from 'react';
-import './App.css';
-import 'antd/dist/antd.css';
-import AppHeader from './components/common/header'
-import AppHome from './views/home'
+import React from "react";
+import "./App.css";
+import "antd/dist/antd.css";
+import AppHeader from "./components/common/header";
+import AppHome from "./views/home";
 
-import { Layout } from 'antd';
+import { Layout } from "antd";
 
 const { Header, Content } = Layout;
 
