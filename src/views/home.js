@@ -5,6 +5,7 @@ import AppFeature from "../components/common/home/feature";
 import AppWorks from "../components/common/home/works";
 import AppFaq from "../components/common/home/faq";
 import AppPricing from "../components/common/home/pricing";
+import AppContact from "../components/common/home/contact";
 
 const AppHome = () => {
   return (
@@ -15,6 +16,7 @@ const AppHome = () => {
       <AppWorks />
       <AppFaq />
       <AppPricing />
+      <AppContact />
     </div>
   );
 };
