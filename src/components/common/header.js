@@ -1,5 +1,7 @@
-import React from 'react'
-import { Menu } from 'antd';
+import React from "react";
+import { Anchor } from "antd";
+
+const { Link } = Anchor;
 
 const AppHeader = () => {
   return (
@@ -9,18 +11,19 @@ const AppHeader = () => {
           <i className="fas fa-bolt"></i>
           <a href="http://www.google.com">Tech</a>
         </div>
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-          <Menu.Item key="home">Home</Menu.Item>
-          <Menu.Item key="about">About</Menu.Item>
-          <Menu.Item key="features">Features</Menu.Item>
-          <Menu.Item key="howitworks">How it works</Menu.Item>
-          <Menu.Item key="faq">FAQ</Menu.Item>
-          <Menu.Item key="pricing">Pricing</Menu.Item>
-          <Menu.Item key="contact">Contact</Menu.Item>
-        </Menu>
+
+        <Anchor targetOffset="65">
+          <Link href="#hero" title="Home" />
+          <Link href="#about" title="About" />
+          <Link href="#feature" title="Feature" />
+          <Link href="#works" title="How it Works" />
+          <Link href="#faq" title="FAQ" />
+          <Link href="#pricing" title="Pricing" />
+          <Link href="#contact" title="Contact" />
+        </Anchor>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default AppHeader;
